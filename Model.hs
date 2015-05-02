@@ -1,3 +1,4 @@
+{-# LANGUAGE TemplateHaskell #-}
 module Model where
 
 import ClassyPrelude.Yesod

@@ -1,5 +1,5 @@
 {-# LANGUAGE PackageImports #-}
-import "xyz" Application (develMain)
+import "provisionbot" Application (develMain)
 import Prelude (IO)
 
 main :: IO ()

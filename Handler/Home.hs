@@ -18,7 +18,7 @@ getHomeR = do
         handlerName = "getHomeR" :: Text
     defaultLayout $ do
         aDomId <- newIdent
-        setTitle "Welcome To Yesod!"
+        setTitle "Provisionbot"
         $(widgetFile "homepage")
 
 postHomeR :: Handler Html
@@ -31,7 +31,7 @@ postHomeR = do
 
     defaultLayout $ do
         aDomId <- newIdent
-        setTitle "Welcome To Yesod!"
+        setTitle "Provisionbot"
         $(widgetFile "homepage")
 
 sampleForm :: Form (FileInfo, Text)

@@ -3,8 +3,6 @@ static/tmp/
 static/combined/
 config/client_session_key.aes
 *.hi
-*.dyn_hi
-*.dyn_o
 *.o
 *.sqlite3
 .hsenv*
@@ -14,10 +12,3 @@ yesod-devel/
 cabal.sandbox.config
 .DS_Store
 *.swp
-node_modules
-.idea
-static
-*.keter
-result
-.ghci
-.dir-locals.el

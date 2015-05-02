@@ -15,12 +15,8 @@ ip-from-header: "_env:IP_FROM_HEADER:false"
 # skip-combining: false
 
 database:
-  user:     "_env:PGUSER:xyz"
-  password: "_env:PGPASS:xyz"
-  host:     "_env:PGHOST:localhost"
-  port:     "_env:PGPORT:5432"
-  database: "_env:PGDATABASE:xyz"
-  poolsize: "_env:PGPOOLSIZE:10"
+  database: "_env:SQLITE_DATABASE:provisionbot.sqlite3"
+  poolsize: "_env:SQLITE_POOLSIZE:10"
 
 copyright: Insert copyright statement here
 #analytics: UA-YOURCODE
