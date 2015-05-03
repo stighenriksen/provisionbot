@@ -1,0 +1,20 @@
+Default: &defaults
+  database: provisionbot.sqlite3
+  poolsize: 10
+
+Development:
+  <<: *defaults
+
+Testing:
+  database: provisionbot_test.sqlite3
+  <<: *defaults
+
+Staging:
+  database: provisionbot_staging.sqlite3
+  poolsize: 100
+  <<: *defaults
+
+Production:
+  database: provisionbot_production.sqlite3
+  poolsize: 100
+  <<: *defaults

@@ -1,0 +1,40 @@
+What can provisionbot do (minimal version)?
+
+Buy and handle SSL certificates
+Register domains
+Manage domains
+Management of DNS, support route53 and linode
+Management of nixos configuration.nixes, including uploading and saving
+Ability to roll out nixoses to linode (would be pretty awesome)
+eLibrary of nixos-configurations
+
+Nixos config files
+
+ -> Set of files
+
+
+Process: Enter domain: 
+         Then, integrate with domain registration
+
+What's the coolest thing? 
+
+Precondition: Use hardcoded nixops file, just read them. Create a folder or something
+1. Research zalora upcast vs nixops
+Use zalora perhaps
+Nixops..... Deploy to amazon, list stuff...
+Server needs to get file...
+1. Look for nixops haskell frontend. If not found, implement.
+3. 
+
+# Stuff learned
+
+* Separate infrastructure (EC2 stuff) and app deployment
+** Infrastructure is just a nix file
+* Build something which can store infrastructure
+* Build something which can store "app" (nixos image)
+* Deploy
+
+
+* Infrastructure
+
+* OS 

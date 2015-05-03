@@ -1,6 +1,2 @@
-{ pkgs ? (import <nixpkgs> {}) }:
-
-(import ./default.nix) {
-    stdenv            = pkgs.stdenv;
-    haskellngPackages = pkgs.haskellngPackages;
-  }
+with (import "/home/stig/nixpkgs" {}).pkgs;
+(haskellngPackages.callPackage ./. {}).env
