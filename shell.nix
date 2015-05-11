@@ -1,2 +1,2 @@
-with (import "/home/stig/nixpkgs" {}).pkgs;
+with (import <nixpkgs> {}).pkgs;
 (haskellngPackages.callPackage ./. {}).env
