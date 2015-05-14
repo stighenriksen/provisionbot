@@ -1,11 +1,10 @@
 { mkDerivation, aeson, base, bytestring, classy-prelude
-, classy-prelude-conduit, classy-prelude-yesod, conduit
-, conduit-extra, containers, data-default, directory, fast-logger
-, file-embed, hjsmin, hspec, http-conduit, monad-control
-, monad-logger, persistent, persistent-sqlite, persistent-template
-, resourcet, safe, shakespeare, stdenv, template-haskell, text
-, time, transformers, unordered-containers, vector, wai-extra
-, wai-logger, warp, yaml, yesod, yesod-auth, yesod-core, yesod-form
+, classy-prelude-yesod, conduit, conduit-extra, data-default
+, directory, fast-logger, file-embed, hjsmin, hspec, http-conduit
+, monad-control, monad-logger, persistent, persistent-sqlite
+, persistent-template, resourcet, shakespeare, stdenv
+, template-haskell, text, transformers, unix, wai-extra, wai-logger
+, warp, yaml, yesod, yesod-auth, yesod-core, yesod-form
 , yesod-static, yesod-test
 }:
 mkDerivation {
@@ -15,18 +14,16 @@ mkDerivation {
   isLibrary = true;
   isExecutable = true;
   buildDepends = [
-    aeson base bytestring classy-prelude classy-prelude-conduit
-    classy-prelude-yesod conduit conduit-extra containers data-default
-    directory fast-logger file-embed hjsmin http-conduit monad-control
-    monad-logger persistent persistent-sqlite persistent-template safe
-    shakespeare template-haskell text time unordered-containers vector
-    wai-extra wai-logger warp yaml yesod yesod-auth yesod-core
-    yesod-form yesod-static
+    aeson base bytestring classy-prelude classy-prelude-yesod conduit
+    conduit-extra data-default directory fast-logger file-embed hjsmin
+    http-conduit monad-control monad-logger persistent
+    persistent-sqlite persistent-template shakespeare template-haskell
+    text unix wai-extra wai-logger warp yaml yesod yesod-auth
+    yesod-core yesod-form yesod-static
   ];
   testDepends = [
-    base classy-prelude classy-prelude-yesod conduit-extra hspec
-    monad-logger persistent persistent-sqlite resourcet transformers
-    yesod yesod-core yesod-test
+    base hspec monad-logger persistent persistent-sqlite resourcet
+    transformers yesod yesod-core yesod-test
   ];
   license = stdenv.lib.licenses.unfree;
 }
