@@ -5,7 +5,7 @@
 , persistent-template, resourcet, shakespeare, stdenv
 , template-haskell, text, transformers, unix, wai-extra, wai-logger
 , warp, yaml, yesod, yesod-auth, yesod-core, yesod-form
-, yesod-static, yesod-test
+, yesod-static, yesod-test, nixops
 }:
 mkDerivation {
   pname = "provisionbot";
@@ -19,7 +19,7 @@ mkDerivation {
     http-conduit monad-control monad-logger persistent
     persistent-sqlite persistent-template shakespeare template-haskell
     text unix wai-extra wai-logger warp yaml yesod yesod-auth
-    yesod-core yesod-form yesod-static
+    yesod-core yesod-form yesod-static, nixops
   ];
   testDepends = [
     base hspec monad-logger persistent persistent-sqlite resourcet

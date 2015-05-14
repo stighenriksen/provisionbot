@@ -8,7 +8,7 @@ let pkg = haskellngPackages.callPackage
              , resourcet, safe, shakespeare, stdenv, template-haskell, text
              , time, transformers, unix, unordered-containers, vector, wai-extra
              , wai-logger, warp, yaml, yesod, yesod-auth, yesod-core, yesod-form
-             , yesod-static, yesod-test, yesod-bin
+             , yesod-static, yesod-test, yesod-bin, nixops
              }:
              mkDerivation {
                pname = "provisionbot";
@@ -23,7 +23,7 @@ let pkg = haskellngPackages.callPackage
                  monad-logger persistent persistent-sqlite persistent-template safe
                  shakespeare template-haskell text time unix unordered-containers
                  vector wai-extra wai-logger warp yaml yesod yesod-auth yesod-core
-                 yesod-form yesod-static yesod-bin
+                 yesod-form yesod-static yesod-bin nixops
                ];
                testDepends = [
                  base hspec monad-logger persistent persistent-sqlite resourcet
